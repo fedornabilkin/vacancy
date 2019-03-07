@@ -10,10 +10,6 @@
 `php yii migrate`  
 
 
-`php yii migrate/down 12 --migrationPath=@vendor/dektrium/yii2-user/migrations`  
-`php yii migrate/down 3 --migrationPath=@yii/rbac/migrations`  
-`php yii migrate/down 4`
-
 **Аккаунты для тестирования**  
 admin 123456  
 operator 123456
