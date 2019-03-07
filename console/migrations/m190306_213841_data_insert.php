@@ -13,9 +13,9 @@ class m190306_213841_data_insert extends Migration
     public function safeUp()
     {
         // user
-        $this->batchInsert('{{%user}}', ['username', 'email', 'password_hash', 'auth_key', 'confirmed_at'], [
-            ['admin', 'admin@yandex.ru', '$2y$10$dECpKZ4jIL732up6ANgLiOeZ9dgYejEPqk8S0mvfZI5ZHF8Ugf1Eu', '89usvSMGe-CtraHBaoYOFDnre58Tu-AD', 1551804797],
-            ['operator', 'operator@yandex.ru', '$2y$10$dECpKZ4jIL732up6ANgLiOeZ9dgYejEPqk8S0mvfZI5ZHF8Ugf1Eu', '89usvSMGe-CtraHBaoYOFDnre58Tu-AD', 1551804797],
+        $this->batchInsert('{{%user}}', ['username', 'email', 'password_hash', 'auth_key', 'confirmed_at', 'created_at', 'updated_at'], [
+            ['admin', 'admin@yandex.ru', '$2y$10$dECpKZ4jIL732up6ANgLiOeZ9dgYejEPqk8S0mvfZI5ZHF8Ugf1Eu', '89usvSMGe-CtraHBaoYOFDnre58Tu-AD', 1551804797, 1551804797, 1551804797],
+            ['operator', 'operator@yandex.ru', '$2y$10$dECpKZ4jIL732up6ANgLiOeZ9dgYejEPqk8S0mvfZI5ZHF8Ugf1Eu', '89usvSMGe-CtraHBaoYOFDnre58Tu-AD', 1551804797, 1551804797, 1551804797],
         ]);
         // profile
         $this->batchInsert('{{%profile}}', ['user_id'], [[1], [2]]);
